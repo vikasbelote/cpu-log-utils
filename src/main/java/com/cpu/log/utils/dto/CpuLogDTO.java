@@ -1,26 +1,18 @@
 package com.cpu.log.utils.dto;
 
-import java.util.Date;
-
 public class CpuLogDTO {
 	
-	private Date cpuUtilizedTime;
+	private String cpuUtilizedTime;
 	
-	private Date cpuAvailableTime;
+	private String cpuAvailableTime;
 	
-	private Integer cpuCount;
+	private Double cpuCount;
 	
 	private Double cpuUsage;
 	
-	private String ipAddress;
-
-	public Integer getCpuCount() {
-		return cpuCount;
-	}
-
-	public void setCpuCount(Integer cpuCount) {
-		this.cpuCount = cpuCount;
-	}
+	private String ipAddress;	
+	
+	private String currentDateTime;
 
 	public Double getCpuUsage() {
 		return cpuUsage;
@@ -38,20 +30,36 @@ public class CpuLogDTO {
 		this.ipAddress = ipAddress;
 	}
 
-	public Date getCpuUtilizedTime() {
+	public Double getCpuCount() {
+		return cpuCount;
+	}
+
+	public void setCpuCount(Double cpuCount) {
+		this.cpuCount = cpuCount;
+	}
+
+	public String getCpuUtilizedTime() {
 		return cpuUtilizedTime;
 	}
 
-	public void setCpuUtilizedTime(Date cpuUtilizedTime) {
+	public void setCpuUtilizedTime(String cpuUtilizedTime) {
 		this.cpuUtilizedTime = cpuUtilizedTime;
 	}
 
-	public Date getCpuAvailableTime() {
+	public String getCpuAvailableTime() {
 		return cpuAvailableTime;
 	}
 
-	public void setCpuAvailableTime(Date cpuAvailableTime) {
+	public void setCpuAvailableTime(String cpuAvailableTime) {
 		this.cpuAvailableTime = cpuAvailableTime;
+	}
+
+	public String getCurrentDateTime() {
+		return currentDateTime;
+	}
+
+	public void setCurrentDateTime(String currentDateTime) {
+		this.currentDateTime = currentDateTime;
 	}
 
 
